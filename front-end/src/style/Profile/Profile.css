@@ -1,0 +1,273 @@
+/* Section part of the profile */ 
+
+.profile-path-main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 5rem;
+    
+}
+
+
+.profile-path-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+ .section-container{
+    height: 100vh;
+    min-width: 23.5%;
+    gap: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/* @media screen and (max-width: 1200px){
+    .section-container{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 865px){
+    .section-container{
+        width: 250px;
+    }
+} */
+
+
+
+
+.profile-name{
+    font-size: 20px;
+    font-weight: 600;
+    width: 75%;
+}
+
+.name-sign-out{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    gap: 5px;
+}
+
+.sign-out{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: red;
+    width: 75%;
+}
+.sign-out:hover{
+    color: rgb(172, 43, 43);
+    cursor: pointer;
+}
+
+.personal-information{
+    width: 75%;
+}
+
+.personal-information .header{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.personal-information .buttons{
+    text-decoration: none;
+    list-style: none;
+}
+
+.personal-information .buttons .information-buttons{
+    font-size: 17px;
+}
+.personal-information .buttons .information-buttons:hover,
+.fav-movies .favorite-movies:hover {
+ cursor: pointer;
+ color: rgb(192, 192, 192);
+}
+
+.fav-movies{
+    width: 75%;
+}
+
+.fav-movies .header{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+.fav-movies .favorite-movies{
+    font-size: 17px;
+}
+
+/* Section part of the profile, css code end */
+
+
+/* Profile information part, css code start */ 
+
+.info-container {
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.888);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 25%;
+}
+
+@media  screen and (max-width: 770px) {
+    .info-container{
+        padding-left: 33%;
+    }
+}
+
+
+
+@media screen and (max-width: 450px){
+    .section-container{
+        width: 40%;
+    }
+
+}
+
+
+@keyframes fadeInMoveUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.profile-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 90%;
+    width: 60%;
+    color: black;
+    gap: 30px;
+    padding-top: 30px;
+
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInMoveUp 0.6s ease forwards;
+}
+
+.header-text-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    height: fit-content;
+}
+
+@media  screen and (max-width: 545px) {
+    .header-text-container{
+        padding-left: 20%;
+    }
+}
+
+.header-text-icon svg{
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+.profile-inputs .header-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+}
+
+@media screen and (max-width: 680px) {
+    .header-text-container{
+        width: 100%;
+    }
+    .profile-inputs .header-text{
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 75px;
+}
+
+@media  screen and (max-width: 545px) {
+    .inputs{
+        padding-left: 25%;
+    }
+}
+
+
+.inputs .input-boxes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 5px;
+}
+
+.input-boxes p {
+    font-size: 17px;
+    font-weight: 500;
+    color: #555;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 10px 13px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.inputs input:hover {
+    background-color: #f1f1f1;
+}
+
+.inputs input:focus {
+    border-color: #666;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-info-save-button {
+    padding: 12px 25px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.profile-info-save-button:hover {
+    background-color: #555;
+    transform: scale(1.03);
+}
+
+
+

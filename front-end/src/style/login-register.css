@@ -1,0 +1,197 @@
+.background-filter{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.615);
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: none;
+}
+
+ .background-filter.active{
+  display: flex;
+  }
+
+ .login-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1c1c1c;
+    color: white;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    z-index: 100;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .login-container.light {
+    background-color: #f3f3f3;
+    color: #222;
+  }
+  
+  .login-container h1 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .login-container .username,
+  .login-container .password {
+    margin-bottom: 1rem;
+  }
+  
+  .login-container p {
+    margin-bottom: 0.4rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .login-container input {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container.light input {
+    background-color: #e0e0e0;
+    color: #222;
+  }
+  
+  .login-container input:focus {
+    background-color: #3a3a3a;
+  }
+  
+  .login-container.light input:focus {
+    background-color: #d3d3d3;
+  }
+  
+  .login-container a {
+    display: block;
+    text-align: right;
+    font-size: 0.85rem;
+    color: #bbb;
+    margin-bottom: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .login-container.light a {
+    color: #666;
+  }
+  
+  .button-login {
+    background-color: #e50914;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .button-login:hover {
+    background-color: #a9151c;
+  }
+  
+  .register {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .register:hover {
+    text-decoration: underline;
+  }
+  
+  .login-container .close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s ease;
+  }
+  
+  .login-container .close-button:hover {
+    color: white;
+  }
+  
+  .login-container.light .close-button:hover {
+    color: #111;
+  }
+
+  /*  server message container */
+
+  .server-message{
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    animation: pop 0.3s ease-out;
+  }
+  /* Server message color rendering */
+  .server-message.green{
+    color: green;
+  }
+  .server-message.red{
+    color: red;
+  }
+
+
+  /* Light mode for login/register */
+.login-container.light {
+  background-color: #ffffff;
+  color: #222;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-container.light h1 {
+  color: #222;
+}
+
+.login-container.light .username p,
+.login-container.light .password p {
+  color: #333;
+}
+
+.login-container.light input {
+  background-color: #f2f2f2;
+  color: #111;
+  border: 1px solid #ccc;
+}
+
+.login-container.light a {
+  color: #0066cc;
+}
+
+.login-container.light .button-login {
+  background-color: #0066cc;
+  color: white;
+}
+
+.login-container.light .register {
+  color: #444;
+}
+
+.login-container.light .close-button {
+  color: #111;
+}
+  

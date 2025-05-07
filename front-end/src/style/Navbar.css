@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 100%;
+    background-color: rgb(22, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5rem;
+    position: fixed;
+    box-shadow: 0 2px 30px rgb(24, 24, 24);
+    z-index: 10;
+    box-shadow: 0 0.5px 1px white;
+}
+
+header.light{
+    background-color: #fff;
+    box-shadow: 0 0.5px 1px black;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    height: fit-content;
+}
+
+.hamburger-icon{
+    display: none;
+    transition: all ease-in-out 0.1s;
+}
+.hamburger-icon.light{
+    color: black;
+}
+
+
+@media screen and (max-width: 1050px){
+    .hamburger-icon{
+        display: flex;
+    }
+}
+.hamburger-icon svg{
+    font-size: 27px;
+    -webkit-user-drag: none;
+}
+
+.link-for-website-name{
+    text-decoration: none;
+}
+
+.website-name{
+   
+    -webkit-user-drag: none;
+    pointer-events: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+
+.website-name .name{
+    font-size: 24px;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    padding: 4px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.website-name .name.light{
+    color: black;
+}
+
+@media screen and (max-width: 321px){
+    .website-name .name{
+        font-size: 20px;
+        letter-spacing: 2px;
+    }   
+
+    .website-icon svg{
+        display: none;
+    }
+
+    .user-profile svg{
+        margin-top: 5px;
+    }
+}
+.website-icon{
+    text-decoration: none;
+}
+.website-icon svg{
+    font-size: 30px;
+    margin-top: 5px;
+    text-decoration: none;
+    color: rgb(58, 57, 57);
+}
+
+.website-icon.light{
+    color: black;
+}
+
+
+.user-profile svg{
+    font-size: 27px;
+    
+}
+.user-profile.light{
+    color: black;
+}
+.user-profile:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* PROFILE ICON DROPDOWN CONTAINER */
+
+.profile-container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    background-color: rgb(21, 21, 21);
+    border-radius: 15px;
+    position: fixed;
+    height: fit-content;
+    width: 250px;
+    top: 82px;
+    right: 0;
+    padding: 4px;
+    padding-bottom: 15px;
+    z-index: 3;    
+}
+.profile-container.light{
+    background-color: rgb(255, 255, 255);
+}
+
+.profile-container.active{
+    display: flex;
+}
+
+
+/* Username field styles */
+.pp-username{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    transition: background-color ease-in-out 0.2s;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.pp-username.light{
+    background-color: white;
+    color: black;
+}
+.pp-username:hover{
+    background-color: rgb(143, 142, 142);
+    
+}
+
+
+
+.profile-picture{
+    height: 35px;
+    width: 35px;
+    background-color: grey;
+    border-radius: 100px;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.profile-username{
+    font-size: 17px;
+    color: white;
+    -webkit-user-drag: none;
+    width: 150px;
+}
+
+.profile-username.light{
+    color: black;
+}
+
+/* Break line between buttons */
+.break{
+    border-bottom: 1px solid rgb(61, 58, 58);
+    width: 100%;
+}
+
+/*  Profile Icon Drop Down Menu Buttons */
+.manage-button , .favorites-button , .theme-button , .exit-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    transition: background-color ease-in-out 0.2s;
+    padding: 4px;
+    text-decoration: none;
+}
+
+.manage-button:hover , .favorites-button:hover , .theme-button:hover , .exit-button:hover{
+    background-color: rgb(143, 142, 142);
+    cursor: pointer;
+}
+
+.manage-profile, .favorites , .theme , .exit{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+}
+.manage-button svg , .favorites-button svg , .theme-button svg , .exit-button svg{
+    font-size: 20px;
+    color: rgb(176, 172, 172);
+    margin-top: 5px;
+}
+
+/* light class props */
+.manage-profile.light{
+    color: black;
+}
+
+.exit.light{
+    color: black;
+}
+.theme-button .theme.light{
+    color: black;
+}
+.favorites.light{
+    color: black;
+}
+
+.link-to-login{
+    text-decoration: none;
+}
+.link-to-profile{
+    text-decoration: none;
+}
+
+
+
+

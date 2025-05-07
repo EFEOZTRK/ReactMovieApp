@@ -1,0 +1,79 @@
+@keyframes fadeInMoveUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.movie-card-profile{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px , 1fr));
+    gap: 10px;
+    height: 100vh;
+    animation: fadeInMoveUp 0.6s ease forwards;
+    opacity: 0;
+    transform: translateY(-5px);
+    
+}
+
+@media screen and (max-width: 680px){
+    .movie-card-profile{
+        width: 49%;
+    }
+
+    .movie-card-profile .header{
+    font-size: 12px;
+    
+   }
+
+    
+}
+
+
+
+.movie-card-profile .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    grid-column: 1 / -1; 
+    font-size: 26px;
+    font-weight: 600;
+    color: #333;
+    gap: 5px;
+}
+
+
+
+.header .favorite-icon svg{
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 680px){
+    .movie-card-profile{
+        width: 49%;
+    }
+
+    .movie-card-profile .header{
+    font-size: 20px;
+    
+   }
+
+   .header .favorite-icon svg{
+    font-size: 26px;
+   }
+
+    
+}
+
+.movie-card-profile .movie-card{
+    box-shadow: 0 5px 7px rgb(95, 92, 92);
+    transition: ease-in-out all  0.2s;
+}
+
+.movie-card-profile .movie-card:hover{
+    box-shadow: 0 5px 10px rgb(58, 57, 57) ;
+}

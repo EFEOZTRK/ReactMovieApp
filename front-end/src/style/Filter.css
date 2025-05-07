@@ -1,0 +1,114 @@
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    
+}
+
+.filter-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: clamp(220px,20%,280px);
+    top: 81px;
+    left: 0;
+    background-color: rgb(50, 49, 49);
+    height: calc(100vh - 80px);
+    position: fixed;
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    transition: all ease-in-out 0.3s;
+    z-index: 9;
+    
+}
+
+.filter-container.active{
+    left: 0;
+}
+
+@media screen and (max-width: 1050px){
+    .filter-container{
+        display: flex;
+        left: -220px;
+    }
+    .main-container{
+        justify-content: center;
+    }
+}
+
+
+.break{
+    border-bottom: 1px solid rgb(61, 58, 58);
+    width: 100%;
+}
+.break.light{
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.button-home , .button-now-playing ,
+.button-upcoming, .button-top-rated, .categorys,
+.genre-names{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    transition: background-color ease-in-out 0.1s;
+    font-weight: 500;
+}
+
+/* Button containers in light mode */
+.button-home.light,
+.button-now-playing.light,
+.button-upcoming.light,
+.button-top-rated.light,
+.categorys.light {
+  background-color: rgba(255, 255, 255, 0.762);
+}
+
+/* Inner text/icon divs in light mode */
+.home-icon.light,
+.home.light,
+.now-playing-icon.light,
+.now-playing.light,
+.upcoming-icon.light,
+.upcoming.light,
+.top-rated-icon.light,
+.top-rated.light,
+.categories-icon.light,
+.categories.light {
+  color: black;
+}
+
+.genre-names.light{
+    background-color: rgba(255, 255, 255, 0.762);
+}
+.genre-icon.light,.names.light{
+    color: black;
+}
+
+
+.categorys{
+    color: rgba(255, 255, 255, 0.536);
+}
+
+
+
+.button-home:hover , .button-now-playing:hover ,
+.button-upcoming:hover, .button-top-rated:hover,
+.genre-names:hover{
+    background-color: rgb(141, 140, 140);
+    cursor: pointer;
+}
+
+
+
+
